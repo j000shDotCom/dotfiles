@@ -1,0 +1,9 @@
+icons/
+id_rsa*
+known_hosts*
+
+vim/.viminfo
+vim/.vim/bundle/
+vim/.vim/.netrwhist
+
+zsh/.zsh_history
