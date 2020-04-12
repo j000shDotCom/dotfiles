@@ -1,6 +1,6 @@
 [user]
 	name = Josh Lindsay
-	email = josh-git@j000sh.com
+	email = git@j000sh.com
 
 [credential]
 	helper = cache
