@@ -28,16 +28,13 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PATH="$PATH:/usr/local/opt/gnu-getopt/bin"
 export PATH="$PATH:/usr/local/opt/sphinx-doc/bin"
 export PATH="$PATH:/usr/local/opt/openssl@1.1/bin"
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 export PATH="$PATH:/usr/local/opt/sqlite/bin"
-
-# For compilers to find sqlite you may need to set:
-export LDFLAGS="-L/usr/local/opt/sqlite/lib"
-export CPPFLAGS="-I/usr/local/opt/sqlite/include"
-
-export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
+export PATH="$PATH:/usr/local/opt/icu4c/bin"
+export PATH="$PATH:/usr/local/opt/icu4c/sbin"
 
 export GOPATH="~/.go"
 
@@ -53,8 +50,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 # asdf-vm
 autoload -Uz compinit && compinit
 source /usr/local/opt/asdf/asdf.sh
-source /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+# source /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 
+alias mkvirtualenv3="mkvirtualenv --python=$(which python3)"
 alias workoff='deactivate'
 alias editzshrc='vim ~/.zshrc'
 

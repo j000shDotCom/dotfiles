@@ -1,6 +1,8 @@
 icons/
-id_rsa*
-known_hosts*
+
+ssh/.ssh/id_rsa*
+ssh/.ssh/known_hosts*
+ssh/.ssh/authorized_keys
 
 vim/.viminfo
 vim/.vim/bundle/
