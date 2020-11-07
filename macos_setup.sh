@@ -2,13 +2,11 @@
 
 set -e
 
+# this macOS setup guide is dope
+# https://sourabhbajaj.com/mac-setup/
+
 # display Terminal in Security & Privacy -> Developer Tools
 sudo spctl developer-mode enable-terminal
-
-# install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-xcode-select --install
 
 # Dock
 
@@ -16,6 +14,7 @@ defaults write com.apple.dock no-bouncing FALSE
 defaults write com.apple.dock showhidden TRUE
 defaults write com.apple.dock static-only TRUE
 defaults write com.apple.dock appswitcher-all-displays TRUE
+defaults write com.apple.dock workspaces-auto-swoosh FALSE
 killall Dock
 
 defaults write com.apple.desktopservices DSDontWriteUSBStores TRUE
@@ -40,6 +39,84 @@ killall Finder
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-brew install tig asdf mosh tldr p7zip heroku hugo exercism ack iterm2 ag alacritty macvim neovim ripgrep tmux screen
-brew cask install vscodium
+mkdir -p ~/Screenshots
+defaults write com.apple.screencapture location ~/Screenshots/
+killall SystemUIServer
 
+# Homebrew and Applications
+
+# Command Line Tools for Xcode
+sudo xcode-select --install
+
+# install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew update
+
+# Install TUI/Shell Applications
+brew install \
+  jq \
+  git \
+  tig \
+  pass pass-otp \
+  asdf \
+  ncdu \
+  mosh \
+  tldr \
+  p7zip \
+  heroku \
+  hugo \
+  exercism \
+  ack \
+  ag \
+  alacritty \
+  macvim \
+  neovim \
+  mitmproxy \
+  ripgrep \
+  tmux \
+  screen \
+  htop \
+  tree \
+  taskwarrior \
+  you-get \
+  ffmpeg \
+  p7zip \
+  youtube-dl \
+  asciinema \
+  geoip
+
+# Install GUI Applications
+brew cask install \
+  firefox-developer-edition \
+  chromium \
+  vscodium \
+  transmission \
+  dash \
+  aerial \
+  psequel \
+  zoomus \
+  vlc \
+  iterm2 \
+  insomnia \
+  lulu \
+  android-file-transfer \
+  android-platform-tools
+
+# Install to Quick Look plugins
+brew cask install \
+  webpquicklook \
+  qlcolorcode \
+  qlstephen \
+  qlmarkdown \
+  quicklook-json \
+  qlprettypatch \
+  quicklook-csv \
+  betterzip \
+  webpquicklook \
+  suspicious-package
+
+# f'ing macOS quarantine
+xattr -d com.apple.quarantine ~/Library/QuickLook/WebpQuickLook.qlgenerator
+
+# Homebrew says to add these
+## TODO
