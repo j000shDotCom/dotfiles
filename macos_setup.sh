@@ -54,6 +54,7 @@ brew update
 
 # Install TUI/Shell Applications
 brew tap heroku/brew
+brew tap homebrew/cask-versions
 
 brew install \
   jq \
