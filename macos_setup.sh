@@ -53,6 +53,8 @@ sudo xcode-select --install
 brew update
 
 # Install TUI/Shell Applications
+brew tap heroku/brew
+
 brew install \
   jq \
   git \
@@ -63,12 +65,10 @@ brew install \
   mosh \
   tldr \
   p7zip \
-  heroku \
   hugo \
   exercism \
   ack \
   ag \
-  alacritty \
   macvim \
   neovim \
   mitmproxy \
@@ -77,7 +77,7 @@ brew install \
   screen \
   htop \
   tree \
-  taskwarrior \
+  taskwarrior-tui \
   you-get \
   ffmpeg \
   p7zip \
