@@ -83,8 +83,10 @@ brew install \
   ffmpeg \
   p7zip \
   youtube-dl \
+  pwgen \
   asciinema \
-  geoip
+  geoip \
+  stow
 
 # Install GUI Applications
 brew cask install \
@@ -101,6 +103,7 @@ brew cask install \
   insomnia \
   lulu \
   alfred \
+  slack \
   # mimestream \ # -> https://mimestream.com/download
   android-file-transfer \
   android-platform-tools
@@ -121,5 +124,8 @@ brew cask install \
 # f'ing macOS quarantine
 xattr -d com.apple.quarantine ~/Library/QuickLook/WebpQuickLook.qlgenerator
 
-# Homebrew says to add these
+# Homebrew says to add these caveats
+## TODO
+
+# stow dotfiles
 ## TODO
