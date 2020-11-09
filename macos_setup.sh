@@ -70,8 +70,6 @@ brew install \
   exercism \
   ack \
   ag \
-  macvim \
-  neovim \
   mitmproxy \
   ripgrep \
   tmux \
@@ -83,6 +81,7 @@ brew install \
   ffmpeg \
   p7zip \
   youtube-dl \
+  neovim \
   pwgen \
   asciinema \
   geoip \
@@ -100,10 +99,12 @@ brew cask install \
   zoomus \
   vlc \
   iterm2 \
+  macvim \
   insomnia \
   lulu \
   alfred \
   slack \
+  docker \
   # mimestream \ # -> https://mimestream.com/download
   android-file-transfer \
   android-platform-tools
