@@ -100,6 +100,8 @@ brew cask install \
   iterm2 \
   insomnia \
   lulu \
+  alfred \
+  # mimestream \ # -> https://mimestream.com/download
   android-file-transfer \
   android-platform-tools
 
