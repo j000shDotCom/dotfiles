@@ -1,0 +1,34 @@
+# Some basic ZSH functionality
+# Created by: Matt Wozniak
+autoload colors zsh/terminfo
+if [[ "$terminfo[colors]" -ge 8 ]]; then
+	colors
+fi
+
+setopt nobeep
+setopt extendedglob
+
+autoload -Uz compinit promptinit
+compinit
+promptinit
+prompt redhat
+
+zstyle ':completion::complete:*' use-cache 1
+zstyle ':completion:::::' completer _complete _correct _expand _approximate
+zstyle ':completion:*' completions 1
+zstyle ':completion:*' glob 1
+zstyle ':completion:*' substitute 1
+zstyle ':completion:*:correct:::' max-errors 1
+
+HISTFILE=~/.zsh_history
+HISTSIZE=3000
+SAVEHIST=3000
+setopt APPEND_HISTORY EXTENDED_HISTORY
+setopt SHARE_HISTORY
+setopt extended_history
+setopt hist_find_no_dups
+setopt inc_append_history
+
+export PATH="/opt/csw/bin:/opt/csw/gcc4/bin:/usr/local/bin:$PATH"
+export LIBRARY_PATH="/usr/lib:/usr/local/lib"
+
