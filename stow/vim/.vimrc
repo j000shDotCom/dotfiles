@@ -10,7 +10,7 @@ set scrolloff=3     " keep 3 lines when scrolling
 set showcmd         " display incomplete commands
 set hlsearch        " highlight searches
 set incsearch       " do incremental searching
-set ignorecase      " ignore case when searching 
+set ignorecase      " ignore case when searching
 
 set ls=0            " never show status line
 set ruler           " show the cursor position all the time
@@ -49,3 +49,10 @@ set splitbelow
 set number
 
 autocmd BufWritePre * :%s/\s\+$//e
+
+" buncha stuff from HN thread https://news.ycombinator.com/item?id=25410390
+set hlsearch    " highlight all search results
+set ignorecase  " do case insensitive search
+set incsearch   " show incremental search results as you type
+
+" consider sensible-vim https://github.com/tpope/vim-sensible
