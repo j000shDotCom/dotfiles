@@ -130,9 +130,6 @@ xattr -d com.apple.quarantine ~/Library/QuickLook/WebpQuickLook.qlgenerator
 ## TODO
 
 # stow dotfiles
-stow --target ~ stow/*
-
-# iTerm2 shell integration
-curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | zsh
-
-# GPG key
+pushd stow
+stow --target ~ *
+popd
