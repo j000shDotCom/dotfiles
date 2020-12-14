@@ -48,6 +48,9 @@ killall SystemUIServer
 # Command Line Tools for Xcode
 sudo xcode-select --install
 
+# install zinit
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew update
@@ -133,3 +136,6 @@ xattr -d com.apple.quarantine ~/Library/QuickLook/WebpQuickLook.qlgenerator
 pushd stow
 stow --target ~ *
 popd
+
+# setup gpg and pass
+## TODO
