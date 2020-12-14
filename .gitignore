@@ -8,4 +8,11 @@ vim/.viminfo
 vim/.vim/bundle/
 vim/.vim/.netrwhist
 
-zsh/.zsh_history
+.lesshst
+.nano/search_history
+.perl_history
+.python_history
+.sml_history
+
+.zsh_history
+.zsh_sessions/
