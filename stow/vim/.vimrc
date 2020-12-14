@@ -56,3 +56,11 @@ set ignorecase  " do case insensitive search
 set incsearch   " show incremental search results as you type
 
 " consider sensible-vim https://github.com/tpope/vim-sensible
+
+"set listchars+=space:>⋄
+set listchars+=trail:⋄
+set listchars+=space:⋄
+set list listchars+=space:⋄
+
+set backupdir=~/.vim/backups//,
+set directory=~/.vim/swapfiles//,
