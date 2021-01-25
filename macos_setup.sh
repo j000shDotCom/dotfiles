@@ -70,6 +70,8 @@ brew install \
   exercism \
   ack \
   ag \
+  macvim \
+  neovim \
   mitmproxy \
   ripgrep \
   tmux \
@@ -81,7 +83,6 @@ brew install \
   ffmpeg \
   p7zip \
   youtube-dl \
-  neovim \
   pwgen \
   asciinema \
   geoip \
@@ -99,12 +100,10 @@ brew cask install \
   zoomus \
   vlc \
   iterm2 \
-  macvim \
   insomnia \
   lulu \
   alfred \
   slack \
-  docker \
   # mimestream \ # -> https://mimestream.com/download
   android-file-transfer \
   android-platform-tools
@@ -122,6 +121,8 @@ brew cask install \
   webpquicklook \
   suspicious-package
 
+# brew install romkatv/powerlevel10k/powerlevel10k # prefer zinit
+
 # f'ing macOS quarantine
 xattr -d com.apple.quarantine ~/Library/QuickLook/WebpQuickLook.qlgenerator
 
@@ -129,4 +130,9 @@ xattr -d com.apple.quarantine ~/Library/QuickLook/WebpQuickLook.qlgenerator
 ## TODO
 
 # stow dotfiles
-## TODO
+stow --target ~ stow/*
+
+# iTerm2 shell integration
+curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | zsh
+
+# GPG key
