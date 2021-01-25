@@ -1,6 +1,7 @@
 [user]
 	name = Josh Lindsay
 	email = git@j000sh.com
+	signingkey = 41BDFCF504459AB7
 
 [credential]
 	helper = cache
@@ -40,3 +41,9 @@
 	required = true
 [pull]
 	rebase = false
+[init]
+	defaultBranch = master
+[commit]
+	gpgsign = true
+[core]
+	excludesfile = /Users/josh/.gitignore_global
