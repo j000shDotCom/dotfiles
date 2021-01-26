@@ -75,8 +75,36 @@ autoload -Uz _zinit
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
 zinit light-mode for \
-    zinit-zsh/z-a-patch-dl \
-    zinit-zsh/z-a-as-monitor \
-    zinit-zsh/z-a-bin-gem-node
+  zinit-zsh/z-a-patch-dl \
+  zinit-zsh/z-a-as-monitor \
+  zinit-zsh/z-a-bin-gem-node
 
-### End of Zinit's installer chunk
+zinit as"null" wait"1" lucid for \
+  sbin    Fakerr/git-recall \
+  sbin    cloneopts paulirish/git-open \
+  sbin    paulirish/git-recent \
+  sbin    davidosomething/git-my \
+  sbin atload"export _MENU_THEME=legacy" \
+          arzzen/git-quick-stats \
+  sbin    iwata/git-now \
+  make"PREFIX=$ZPFX install" \
+          tj/git-extras \
+  sbin"bin/git-dsf;bin/diff-so-fancy" \
+          zdharma/zsh-diff-so-fancy \
+  sbin"git-url;git-guclone" make"GITURL_NO_CGITURL=1" \
+          zdharma/git-url
+
+source "$HOME/.zinit/plugins/tj---git-extras/etc/git-extras-completion.zsh"
+
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+
+# Google Cloud SDK
+export CLOUDSDK_PYTHON="$(brew --prefix)/opt/python@3.8/libexec/bin/python"
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# iTerm2 Shell Integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

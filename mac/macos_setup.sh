@@ -90,6 +90,7 @@ brew install \
   asciinema \
   geoip \
   stow
+  duti
 
 # Install GUI Applications
 brew cask install \
