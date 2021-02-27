@@ -11,7 +11,7 @@ sudo spctl developer-mode enable-terminal
 # Dock
 
 defaults write com.apple.dock no-bouncing FALSE
-defaults write com.apple.dock showhidden TRUE
+defaults write com.apple.dock showhidden FALSE
 defaults write com.apple.dock static-only TRUE
 defaults write com.apple.dock appswitcher-all-displays TRUE
 defaults write com.apple.dock workspaces-auto-swoosh FALSE
@@ -39,9 +39,13 @@ killall Finder
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# iCloud Drive and Screenshots
+
+mkdir ~/Sync
+ln -s ~/Library/Mobile\ Documents/Documents/com~apple~CloudDocs/ ~/Sync/iCloud
+
 mkdir -p ~/Screenshots
 defaults write com.apple.screencapture location ~/Screenshots/
-killall SystemUIServer
 
 # Homebrew and Applications
 
@@ -89,7 +93,7 @@ brew install \
   pwgen \
   asciinema \
   geoip \
-  stow
+  stow \
   duti
 
 # Install GUI Applications
@@ -98,17 +102,17 @@ brew cask install \
   chromium \
   vscodium \
   transmission \
-  dash \
-  aerial \
-  psequel \
-  zoomus \
+#   dash \
+#   aerial \
+#   sequel \
+#   zoomus \
   vlc \
   iterm2 \
   insomnia \
-  lulu \
-  alfred \
-  slack \
-  # mimestream \ # -> https://mimestream.com/download
+#   lulu \
+#   alfred \
+#   slack \
+#   mimestream \ # -> https://mimestream.com/download
   android-file-transfer \
   android-platform-tools
 
@@ -138,5 +142,8 @@ pushd stow
 stow --target ~ *
 popd
 
-# setup gpg and pass
-## TODO
+# iTerm2 shell integration
+curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | zsh
+
+# GPG key
+# TODO
