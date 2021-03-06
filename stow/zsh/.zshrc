@@ -36,7 +36,27 @@ export PATH="$PATH:/usr/local/opt/sqlite/bin"
 export PATH="$PATH:/usr/local/opt/icu4c/bin"
 export PATH="$PATH:/usr/local/opt/icu4c/sbin"
 
+<<<<<<< HEAD
 export GOPATH="~/.go"
+=======
+export MANPATH="/usr/local/man:$MANPATH"
+
+export WORK_DIR="$HOME/Repos"
+export DOWNLOADS_DIR="$HOME/Downloads"
+export DOCUMENTS_DIR="$HOME/Documents"
+
+export FIREFOX_BINARY_PATH="/Applications/Firefox Developer Edition.app/Contents/MacOS/firefox"
+export CHROME_BINARY_PATH="/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary"
+export EDGE_BINARY_PATH="/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"
+export SAFARI_BINARY_PATH="/Applications/Safari Technology Preview.app/Contents/MacOS/Safari Technology Preview"
+
+# asdf-vm
+autoload -Uz compinit && compinit
+source /usr/local/opt/asdf/asdf.sh
+# source /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+
+# PL Runtimes and Environments
+>>>>>>> 789bd61 (updated zshrc, but switching to fish so whatever)
 
 # Setting PATH for Python 3 installed by brew
 # export PATH=/usr/local/share/python:$PATH
@@ -56,6 +76,11 @@ alias mkvirtualenv3="mkvirtualenv --python=$(which python3)"
 alias workoff='deactivate'
 alias editzshrc='vim ~/.zshrc'
 
+# Java
+export JAVA_HOME="/Users/josh/.asdf/installs/java/adoptopenjdk-15.0.1+9"
+
+# Go
+export GOPATH="~/.go"
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 
@@ -108,3 +133,5 @@ source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/compl
 
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="$HOME/.poetry/bin:$PATH"
