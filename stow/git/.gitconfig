@@ -13,7 +13,7 @@
 	default = simple
 
 [pull]
-	rebase = false
+	rebase = true
 
 [alias]
 	pushall = !git remote | xargs -L1 git push --all
@@ -57,3 +57,5 @@
 	gpgsign = true
 [core]
 	excludesfile = /Users/josh/.gitignore_global
+[branch]
+	autosetupmerge = always
