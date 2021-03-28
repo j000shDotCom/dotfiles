@@ -35,6 +35,7 @@ export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 export PATH="$PATH:/usr/local/opt/sqlite/bin"
 export PATH="$PATH:/usr/local/opt/icu4c/bin"
 export PATH="$PATH:/usr/local/opt/icu4c/sbin"
+export PATH="$HOME/.poetry/bin:$PATH"
 
 <<<<<<< HEAD
 export GOPATH="~/.go"
@@ -47,6 +48,7 @@ export DOCUMENTS_DIR="$HOME/Documents"
 
 export FIREFOX_BINARY_PATH="/Applications/Firefox Developer Edition.app/Contents/MacOS/firefox"
 export CHROME_BINARY_PATH="/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary"
+export CHROMIUM_BINARY_PATH="/Applications/Chromium.app/Contents/MacOS/Chromium"
 export EDGE_BINARY_PATH="/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"
 export SAFARI_BINARY_PATH="/Applications/Safari Technology Preview.app/Contents/MacOS/Safari Technology Preview"
 
@@ -133,5 +135,3 @@ source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/compl
 
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-export PATH="$HOME/.poetry/bin:$PATH"
