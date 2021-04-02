@@ -37,9 +37,6 @@ export PATH="$PATH:/usr/local/opt/icu4c/bin"
 export PATH="$PATH:/usr/local/opt/icu4c/sbin"
 export PATH="$HOME/.poetry/bin:$PATH"
 
-<<<<<<< HEAD
-export GOPATH="~/.go"
-=======
 export MANPATH="/usr/local/man:$MANPATH"
 
 export WORK_DIR="$HOME/Repos"
@@ -58,7 +55,6 @@ source /usr/local/opt/asdf/asdf.sh
 # source /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 
 # PL Runtimes and Environments
->>>>>>> 789bd61 (updated zshrc, but switching to fish so whatever)
 
 # Setting PATH for Python 3 installed by brew
 # export PATH=/usr/local/share/python:$PATH
