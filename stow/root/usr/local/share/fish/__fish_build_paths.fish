@@ -1,0 +1,1 @@
+../../Cellar/fish/3.2.1/share/fish/__fish_build_paths.fish

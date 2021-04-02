@@ -1,0 +1,1 @@
+../../../Cellar/asdf/0.8.0_1/share/fish/vendor_completions.d/asdf.fish

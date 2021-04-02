@@ -1,0 +1,1 @@
+../../../Cellar/fish/3.2.1/share/fish/functions/__fish_print_xdg_applications_directories.fish

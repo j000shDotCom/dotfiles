@@ -1,0 +1,1 @@
+../../../Cellar/fish/3.2.1/share/fish/functions/__fish_print_cmd_args_without_options.fish

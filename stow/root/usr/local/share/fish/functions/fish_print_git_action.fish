@@ -1,0 +1,1 @@
+../../../Cellar/fish/3.2.1/share/fish/functions/fish_print_git_action.fish

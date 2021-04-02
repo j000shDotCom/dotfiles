@@ -1,0 +1,1 @@
+../../../Cellar/exercism/3.0.13/share/fish/vendor_completions.d/exercism.fish

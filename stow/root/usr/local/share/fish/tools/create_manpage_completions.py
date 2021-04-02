@@ -1,0 +1,1 @@
+../../../Cellar/fish/3.2.1/share/fish/tools/create_manpage_completions.py
