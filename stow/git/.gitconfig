@@ -3,17 +3,29 @@
 	email = git@j000sh.com
 	signingkey = 41BDFCF504459AB7
 
+[init]
+	defaultBranch = master
+[core]
+	excludesfile = /Users/josh/.gitignore_global
+[color]
+	ui = auto
+[gpg]
+	program = gpg
+
+[commit]
+	gpgsign = true
+[branch]
+	autosetupmerge = always
+[push]
+	default = simple
+[pull]
+	rebase = true
+
 [github]
 	user = j000shDotCom
 
 [credential]
 	helper = cache
-
-[push]
-	default = simple
-
-[pull]
-	rebase = true
 
 [alias]
 	pushall = !git remote | xargs -L1 git push --all
@@ -29,33 +41,8 @@
 	unstage = reset HEAD --
 	undo-commit = reset --soft HEAD^
 
-[color]
-	ui = auto
-
-[diff]
-	tool = nvimdiff
-
-[difftool "nvimdiff"]
-	cmd = "nvim -d -u ~/.vimrc \"$LOCAL\" \"$REMOTE\""
-
-[difftool]
-	prompt = false
-
-[gpg]
-	program = gpg
-
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[pull]
-	rebase = false
-[init]
-	defaultBranch = master
-[commit]
-	gpgsign = true
-[core]
-	excludesfile = /Users/josh/.gitignore_global
-[branch]
-	autosetupmerge = always
