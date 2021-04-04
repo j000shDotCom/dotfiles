@@ -1,1 +1,0 @@
-../../../Homebrew/completions/fish/brew.fish

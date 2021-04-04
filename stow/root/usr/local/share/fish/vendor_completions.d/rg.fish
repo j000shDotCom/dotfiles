@@ -1,1 +1,0 @@
-../../../Cellar/ripgrep/12.1.1/share/fish/vendor_completions.d/rg.fish

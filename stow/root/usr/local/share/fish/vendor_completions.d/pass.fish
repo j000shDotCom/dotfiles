@@ -1,1 +1,0 @@
-../../../Cellar/pass/1.7.3/share/fish/vendor_completions.d/pass.fish

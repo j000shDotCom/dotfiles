@@ -1,1 +1,0 @@
-../../../Cellar/youtube-dl/2021.4.1/share/fish/vendor_completions.d/youtube-dl.fish

@@ -1,1 +1,0 @@
-../../../Cellar/task/2.5.3/share/fish/vendor_completions.d/task.fish
