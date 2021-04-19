@@ -69,6 +69,14 @@ function fish_prompt --description 'Write out the prompt'
         set suffix '$'
     end
 
+    # python virtual env
+    if set -q VIRTUAL_ENV
+        set_color -b blue white
+        echo -n -s "[" (basename "$VIRTUAL_ENV") "]"
+        set_color normal
+        echo -n " "
+    end
+
     # PWD
     set_color $color_cwd
     echo -n (prompt_pwd)
