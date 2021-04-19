@@ -12,6 +12,8 @@
 [gpg]
 	program = gpg
 
+[status]
+    short = true
 [commit]
 	gpgsign = true
 [branch]
