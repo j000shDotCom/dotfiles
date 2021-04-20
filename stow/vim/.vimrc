@@ -62,5 +62,5 @@ set listchars+=trail:⋄
 set listchars+=space:⋄
 set list listchars+=space:⋄
 
-set backupdir=~/.vim/backups//,
-set directory=~/.vim/swapfiles//,
+set backupdir=~/.config/vim/backups/,
+set directory=~/.config/vim/swapfiles/,
