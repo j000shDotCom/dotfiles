@@ -5,3 +5,5 @@ source (brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fi
 
 alias code codium
 alias xcode 'open -a Xcode'
+
+set -g GPG_TTY (tty)
