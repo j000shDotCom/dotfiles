@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# asdf-plugin: nodejs 14.15.0
-exec /usr/local/opt/asdf/bin/asdf exec "npm" "$@"

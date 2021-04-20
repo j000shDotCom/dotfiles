@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# asdf-plugin: java adoptopenjdk-15.0.1+9
-exec /usr/local/opt/asdf/bin/asdf exec "jrunscript" "$@"
