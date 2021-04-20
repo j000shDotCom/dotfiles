@@ -125,4 +125,17 @@ if begin; status --is-interactive; and not functions -q -- iterm2_status; and [ 
   iterm2_write_remotehost_currentdir_uservars
   printf "\033]1337;ShellIntegrationVersion=15;shell=fish\007"
 end
-alias imgcat=~/.iterm2/imgcat;alias imgls=~/.iterm2/imgls;alias it2api=~/.iterm2/it2api;alias it2attention=~/.iterm2/it2attention;alias it2check=~/.iterm2/it2check;alias it2copy=~/.iterm2/it2copy;alias it2dl=~/.iterm2/it2dl;alias it2getvar=~/.iterm2/it2getvar;alias it2git=~/.iterm2/it2git;alias it2setcolor=~/.iterm2/it2setcolor;alias it2setkeylabel=~/.iterm2/it2setkeylabel;alias it2ul=~/.iterm2/it2ul;alias it2universion=~/.iterm2/it2universion
+
+alias imgcat=~/.config/iterm2/functions/imgcat
+alias imgls=~/.config/iterm2/functions/imgls
+alias it2api=~/.config/iterm2/functions/it2api
+alias it2attention=~/.config/iterm2/functions/it2attention
+alias it2check=~/.config/iterm2/functions/it2check
+alias it2copy=~/.config/iterm2/functions/it2copy
+alias it2dl=~/.config/iterm2/functions/it2dl
+alias it2getvar=~/.config/iterm2/functions/it2getvar
+alias it2git=~/.config/iterm2/functions/it2git
+alias it2setcolor=~/.config/iterm2/functions/it2setcolor
+alias it2setkeylabel=~/.config/iterm2/functions/it2setkeylabel
+alias it2ul=~/.config/iterm2/functions/it2ul
+alias it2universion=~/.config/iterm2/functions/it2universion
