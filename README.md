@@ -13,6 +13,6 @@ popd
 
 TODO
 
-- [ ] Firefox extension settings (leverate Firefox sync?)
+- [ ] Firefox extension settings (leverage Firefox sync?)
 - [X] move macOS setup to separate repository or [Gist](https://gist.github.com/j000shDotCom/809f9f2e613dbfcb625c78c042372c9d) - *DONE*
 - [ ] learn how to use `tmux` and `vim`
