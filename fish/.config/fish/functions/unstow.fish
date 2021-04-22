@@ -5,6 +5,6 @@ function unstow --description 'unstow dotfiles to target directory'
     end
 
     pushd $DOTFILES_DIR
-    stow --target ~ */
+    stow --target ~ (cat ./stow_dirs)
     popd
 end
