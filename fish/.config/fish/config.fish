@@ -7,3 +7,4 @@ alias code codium
 alias xcode 'open -a Xcode'
 
 set -g GPG_TTY (tty)
+set -g DOTFILES_DIR ~/Repos/dotfiles
