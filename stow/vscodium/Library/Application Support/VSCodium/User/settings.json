@@ -1,0 +1,6 @@
+{
+    "window.zoomLevel": 1,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.renderFinalNewline": false
+}
