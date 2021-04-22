@@ -6,8 +6,8 @@ across my personal Mac, work Mac, Android phone, and Raspberry Pis.
 I use `stow` to symbolically link these dotfiles to a relative path from the home directory. 
 
 ```shell
-pushd $DOTFILES_DIR/stow
-stow --target ~ *
+pushd $DOTFILES_DIR
+stow --target ~ */
 popd
 ```
 
