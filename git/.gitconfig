@@ -1,50 +1,50 @@
 [user]
-	name = Josh Lindsay
-	email = git@j000sh.com
-	signingkey = 41BDFCF504459AB7
+    name = Josh Lindsay
+    email = git@j000sh.com
+    signingkey = 41BDFCF504459AB7
 
 [init]
-	defaultBranch = master
+    defaultBranch = master
 [core]
-	excludesfile = /Users/josh/.gitignore_global
+    excludesfile = /Users/josh/.gitignore_global
 [color]
-	ui = auto
+    ui = auto
 [gpg]
-	program = gpg
+    program = gpg
 
 [status]
     short = true
-[commit]
-	gpgsign = true
 [branch]
-	autosetupmerge = always
+    autosetupmerge = always
+[commit]
+    gpgsign = true
 [push]
-	default = simple
+    default = simple
 [pull]
-	rebase = true
+    rebase = true
 
 [github]
-	user = j000shDotCom
+    user = j000shDotCom
 
 [credential]
-	helper = cache
+    helper = cache
 
 [alias]
-	pushall = !git remote | xargs -L1 git push --all
+    pushall = !git remote | xargs -L1 git push --all
 
-	graphgpg = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%C(blue)%x20(%ce)%x20%C(cyan)[gpg:%GK%x20%G?]%C(reset)%n%x20%s%n"
-	graph = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%C(blue)%x20(%ce)%x20%C(cyan)%C(reset)%n%x20%s%n"
-	stat = status -sb
-	last = log -1 --stat
-	cached = diff --cached
-	d = difftool
-	c = clone
+    graphgpg = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%C(blue)%x20(%ce)%x20%C(cyan)[gpg:%GK%x20%G?]%C(reset)%n%x20%s%n"
+    graph = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%C(blue)%x20(%ce)%x20%C(cyan)%C(reset)%n%x20%s%n"
+    stat = status -sb
+    last = log -1 --stat
+    cached = diff --cached
+    d = difftool
+    c = clone
 
-	unstage = reset HEAD --
-	undo-commit = reset --soft HEAD^
+    unstage = reset HEAD --
+    undo-commit = reset --soft HEAD^
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true

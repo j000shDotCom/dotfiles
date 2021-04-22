@@ -1,13 +1,13 @@
 #
-#	~/.cshrc shell configuration file
+# ~/.cshrc shell configuration file
 #
-#	This file contains configuration commands which will
-#	be executed for each shell which starts up (e.g., each
-#	shell window, and most commands given to the shell).
-#	Changes to this file will NOT take effect in existing
-#	shells unless you give the shell-level command "source ~/.cshrc",
-#	but they WILL take effect in shells created after you
-#	change this file.
+# This file contains configuration commands which will
+# be executed for each shell which starts up (e.g., each
+# shell window, and most commands given to the shell).
+# Changes to this file will NOT take effect in existing
+# shells unless you give the shell-level command "source ~/.cshrc",
+# but they WILL take effect in shells created after you
+# change this file.
 
 # Begin by including the "standard" configuration file, which will
 # configure this shell according to the local standard configuration.

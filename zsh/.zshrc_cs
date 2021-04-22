@@ -2,7 +2,7 @@
 # Created by: Matt Wozniak
 autoload colors zsh/terminfo
 if [[ "$terminfo[colors]" -ge 8 ]]; then
-	colors
+    colors
 fi
 
 setopt nobeep
@@ -31,4 +31,3 @@ setopt inc_append_history
 
 export PATH="/opt/csw/bin:/opt/csw/gcc4/bin:/usr/local/bin:$PATH"
 export LIBRARY_PATH="/usr/lib:/usr/local/lib"
-
