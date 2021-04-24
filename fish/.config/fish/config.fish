@@ -8,4 +8,5 @@ alias xcode 'open -a Xcode'
 
 set -g GPG_TTY (tty)
 set -g DOTFILES_DIR ~/Repos/dotfiles
-set -g SECRETS_DIR ~/Library/Mobile\ Documents/com~apple~CloudDocs/.local
+set -g ICLOUD_DIR ~/Library/Mobile\ Documents/com~apple~CloudDocs
+set -g SECRETS_DIR $ICLOUD_DIR/.local
