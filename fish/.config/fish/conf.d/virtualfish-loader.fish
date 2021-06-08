@@ -6,8 +6,10 @@ set -g WORKON_HOME ~/.local/envs
 set -g VIRTUALFISH_HOME ~/.local/envs
 set -g PROJECT_HOME ~/Workspaces/Python
 
-source /usr/local/lib/python3.9/site-packages/virtualfish/virtual.fish
-source /usr/local/lib/python3.9/site-packages/virtualfish/compat_aliases.fish
-source /usr/local/lib/python3.9/site-packages/virtualfish/projects.fish
-source /usr/local/lib/python3.9/site-packages/virtualfish/update_python.fish
-emit virtualfish_did_setup_plugins
+if false # deal with it later, yo
+    source /usr/local/lib/python3.9/site-packages/virtualfish/virtual.fish
+    source /usr/local/lib/python3.9/site-packages/virtualfish/compat_aliases.fish
+    source /usr/local/lib/python3.9/site-packages/virtualfish/projects.fish
+    source /usr/local/lib/python3.9/site-packages/virtualfish/update_python.fish
+    emit virtualfish_did_setup_plugins
+end
