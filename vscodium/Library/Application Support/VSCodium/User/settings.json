@@ -31,7 +31,6 @@
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "terminal.external.osxExec": "iTerm2.app",
     "terminal.integrated.cursorStyle": "line",
-    "window.zoomLevel": 1,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.enablePreviewFromCodeNavigation": true,
     "workbench.editor.enablePreviewFromQuickOpen": true,
@@ -39,6 +38,7 @@
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.pinnedTabSizing": "compact",
-    "window.nativeTabs": true
+    "redhat.telemetry.enabled": false,
+    "editor.folding": false
   }
   
